@@ -169,23 +169,41 @@ a.secondary {
 
 .container {
   padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: #222;
   text-align: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.title:hover {
+  transform: scale(1.03);
+  color: #0058a3;
+}
 .description {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   text-align: center;
-  color: #ccc;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 .chatbox {
   width: 100%;
   max-width: 600px;
   margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .faq {
@@ -195,24 +213,46 @@ a.secondary {
   text-align: center;
 }
 
+.faq h2 {
+  font-size: 1.75rem;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 .faqButtons {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 
 .faqButtons button {
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
   border: none;
-  border-radius: 8px;
-  background-color: #0070f3;
+  border-radius: 10px;
+  background-color: #0058a3;
   color: white;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faqButtons button:hover {
-  background-color: #005dc1;
+  background-color: #007bff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.faqButtons button:active {
+  background-color: #004c8c;
+  transform: scale(0.96);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666666;
 }
