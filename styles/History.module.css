@@ -1,0 +1,224 @@
+/* History.module.css */
+/* Dark theme optimized for AI chatbot interface */
+.historyContainer {
+    /* Humber colors */
+    --humber-blue: #0070c0;
+    --humber-dark-blue: #005293;
+    --humber-yellow: #ffb71b;
+    --humber-accent-blue: #4dabf7;
+    --humber-light-blue: #8bb8e8;
+    --dark-bg: #121212;
+    --dark-surface: #1e1e1e;
+    --dark-surface-hover: #2a2a2a;
+    --dark-border: #333333;
+    --light-text: #e0e0e0;
+    --secondary-text: #a0a0a0;
+  
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--light-text);
+  }
+  
+  .pageHeader {
+    background-color: var(--humber-dark-blue);
+    color: white;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+  
+  .pageTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: var(--humber-accent-blue);
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: bold;
+  }
+  
+  .searchContainer {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .searchBox {
+    width: 70%;
+    padding: 0.8rem;
+    border: 1px solid var(--dark-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--dark-surface);
+    color: var(--light-text);
+  }
+  
+  .searchBox::placeholder {
+    color: var(--secondary-text);
+  }
+  
+  .searchButton {
+    background-color: var(--humber-blue);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  
+  .searchButton:hover:not(:disabled) {
+    background-color: var(--humber-dark-blue);
+  }
+  
+  .searchButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .filterSection {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .filterButton {
+    background-color: var(--dark-surface);
+    color: var(--light-text);
+    border: 1px solid var(--dark-border);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .filterButton:hover {
+    background-color: var(--dark-surface-hover);
+    border-color: var(--humber-blue);
+  }
+  
+  .activeFilter {
+    background-color: var(--humber-dark-blue);
+    color: white;
+    border: 1px solid var(--humber-blue);
+  }
+  
+  .historyList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .historyItem {
+    background-color: var(--dark-surface);
+    border: 1px solid var(--dark-border);
+    border-radius: 8px;
+    padding: 1.2rem;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .historyItem:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid var(--humber-blue);
+  }
+  
+  .historyContent {
+    flex: 1;
+  }
+  
+  .historyTitle {
+    font-size: 1.2rem;
+    color: var(--humber-accent-blue);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .historyDate {
+    color: var(--secondary-text);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .historyAnswer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--dark-surface-hover);
+    border-left: 3px solid var(--humber-blue);
+    line-height: 1.5;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .actionButton {
+    background-color: var(--dark-surface-hover);
+    color: var(--humber-accent-blue);
+    border: 1px solid var(--humber-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  
+  .actionButton:hover {
+    background-color: var(--humber-dark-blue);
+    color: white;
+  }
+  
+  .emptyState {
+    text-align: center;
+    padding: 3rem;
+    color: var(--secondary-text);
+    background-color: var(--dark-surface);
+    border-radius: 8px;
+    border: 1px solid var(--dark-border);
+  }
+  
+  .emptyState h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--humber-accent-blue);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .searchBox {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .searchButton {
+      margin-left: 0;
+      width: 100%;
+    }
+    
+    .historyItem {
+      flex-direction: column;
+    }
+    
+    .actionButtons {
+      margin-top: 1rem;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
