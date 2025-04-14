@@ -15,7 +15,7 @@ export default function Home() {
       />
     </Head>
     
-    <div className={styles.container}>
+    <div className={styles.darkPage}>
       <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
