@@ -43,8 +43,18 @@ export default function Home() {
                 <button onClick={() => setFaqQuestion("How much is the tuition?")}>
                   How much is the tuition?
                 </button>
+                <button onClick={() => setFaqQuestion("How do I apply to the program?")}>
+                  How do I apply to the program?
+                </button>
+                <button onClick={() => setFaqQuestion("What equipment or devices do I need for the program?")}>
+                  What equipment or devices do I need for the program?
+                </button>
+                <button onClick={() => setFaqQuestion("How can I contact someone for help?")}>
+                  How can I contact someone for help?
+                </button>
               </div>
             </div>
+
           </main>
         </div>
       </div>
