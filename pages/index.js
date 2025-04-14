@@ -16,6 +16,7 @@ export default function Home() {
     </Head>
     
     <div className={styles.container}>
+      <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Humber Programming <br /> AI Chatbot
@@ -38,6 +39,7 @@ export default function Home() {
             </div>
           </div>
           </main>
+    </div>
     </div>
     </>
   );
