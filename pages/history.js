@@ -25,6 +25,8 @@ export default function History() {
     }
   ];
 
+  const [activeFilter, setActiveFilter] = useState('all');
+
   const [showAnswers, setShowAnswers] = useState(
     dummyHistory.map(() => false) // on page load, answers are hidden
   );
@@ -65,11 +67,23 @@ export default function History() {
         </div>
         
         <div className={styles.filterSection}>
-          <button className={`${styles.filterButton} ${styles.activeFilter}`}>All Chats</button>
-          <button className={styles.filterButton}>This Month</button>
-          <button className={styles.filterButton}>Program Inquiries</button>
-          <button className={styles.filterButton}>Admission Questions</button>
-        </div>
+      <button 
+        className={`${styles.filterButton} ${activeFilter === 'all' ? styles.activeFilter : ''}`}
+        onClick={() => setActiveFilter('all')}
+      >All Chats</button>
+      <button 
+          className={`${styles.filterButton} ${activeFilter === 'month' ? styles.activeFilter : ''}`}
+          onClick={() => setActiveFilter('month')}
+      >This Month</button>
+      <button 
+        className={`${styles.filterButton} ${activeFilter === 'program' ? styles.activeFilter : ''}`}
+        onClick={() => setActiveFilter('program')}
+      >Program Inquiries</button>
+      <button 
+          className={`${styles.filterButton} ${activeFilter === 'admission' ? styles.activeFilter : ''}`}
+          onClick={() => setActiveFilter('admission')}
+      >Admission Questions</button>
+</div>
         
         {dummyHistory.length > 0 ? (
           <div className={styles.historyList}>
@@ -79,7 +93,9 @@ export default function History() {
                   <h3 className={styles.historyTitle}>{item.question}</h3>
                   <div className={styles.historyDate}>{item.date}</div>
                   {showAnswers[index] && (
-                    <p className={styles.historyAnswer}>{item.answer}</p>
+                    <p className={`${styles.historyAnswer} ${showAnswers[index] ? styles.visible : ''}`}>
+                    {item.answer}
+                    </p>
                   )}
                 </div>
                 <div className={styles.actionButtons}>
