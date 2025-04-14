@@ -256,3 +256,40 @@ a.secondary {
   font-size: 0.9rem;
   color: #666666;
 }
+
+.darkPage {
+  background-color: #0d0d0d;
+  color: #e6e6e6;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.darPage .container {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.darkPage .title {
+  color: #ffffff;
+}
+
+.darkPage .chatbox {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.darkPage .faq h2 {
+  color: #ffffff;
+}
+
+.darkPage .faqButtons button {
+  background-color: #1e90ff;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+}
+
+.darkPage .faqButtons button:hover {
+  background-color: #007bff;
+  box-shadow: 0 0 16px rgba(30, 144, 255, 0.6);
+}
