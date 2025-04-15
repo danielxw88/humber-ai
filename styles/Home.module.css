@@ -181,7 +181,8 @@ a.secondary {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transition: transform 0.3s ease;
+  transition: transform;
+  animation: fadeSlideIn 5s ease-out forwards;
 }
 
 .title:hover {
@@ -207,6 +208,7 @@ a.secondary {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  animation: glowIn 2s ease-out 2s forwards;
 }
 
 .faq {
@@ -294,4 +296,26 @@ a.secondary {
 .darkPage .faqButtons button:hover {
   background-color: #007bff;
   box-shadow: 0 0 16px rgba(30, 144, 255, 0.6);
+}
+
+@keyframes glowIn {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6),
+                0 0 40px   rgba(0, 255, 255, 0.4);
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
