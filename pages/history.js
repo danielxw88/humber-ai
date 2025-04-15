@@ -88,7 +88,7 @@ export default function History() {
         {dummyHistory.length > 0 ? (
           <div className={styles.historyList}>
             {dummyHistory.map((item, index) => (
-              <div key={item.id} className={styles.historyItem}>
+              <div key={item.id} className={`${styles.historyItem} ${showAnswers[index] ? styles.expanded : ''}`}>
                 <div className={styles.historyContent}>
                   <h3 className={styles.historyTitle}>{item.question}</h3>
                   <div className={styles.historyDate}>{item.date}</div>
