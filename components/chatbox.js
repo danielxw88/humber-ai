@@ -52,7 +52,14 @@ export default function Chatbox({ presetQuestion }) {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Ask something..."
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            e.preventDefault(); // prevents form submission or accidental refresh
+            handleSend();
+          }
+        }}
       />
+
       <button onClick={handleSend}>Send</button>
     </div>
   );
