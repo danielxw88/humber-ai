@@ -80,6 +80,40 @@ export default function About() {
         </div>
       </section>
 
+      {/* Section: Humber AI Bot Info */}
+      <section className={styles.botInfoSection}>
+        <h2 className={styles.sectionTitle}>Humber AI Bot Info</h2>
+        <p className={styles.sectionIntro}>
+          Learn what the Humber AI Bot can and can't help you with. It’s designed to assist students by providing quick and reliable information.
+        </p>
+        <div className={styles.botCardGrid}>
+          <div className={styles.botCard} >
+            <h3>What it can do</h3>
+            <p>Answer questions related to Humber College such as program info, application deadlines, student services, and campus directions.</p>
+          </div>
+          <div className={styles.botCard}>
+            <h3>What it can't do</h3>
+            <p>It won’t answer unrelated questions like personal advice, internet trivia, or anything beyond Humber’s academic ecosystem.</p>
+          </div>
+          <div className={styles.botCard}>
+            <h3>Ideal usage</h3>
+            <p>Best for fast facts, navigating campus services, or getting help with commonly asked questions about student life.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Humber AI Bot Usage */}
+      <div className={styles.botUsageSection}>
+        <h3>How to Use the Chatbot</h3>
+        <ul className={styles.botUsageList}>
+          <li><strong>Open the Chat:</strong> Go to the homepage of the website to find the AI Chatbot</li>
+          <li><strong>Type a Question:</strong> Ask something like <em>"What’s the deadline for Fall 2025 applications?"</em></li>
+          <li><strong>Use FAQ Questions:</strong> Clicking a question on our FAQ list below the Chatbot will autimatically ask popular questions</li>
+          <li><strong>Get Instant Help:</strong> The bot will respond with official answers based on Humber’s data.</li>
+          <li><strong>Refine If Needed:</strong> If the response doesn’t help, try rephrasing or being more specific.</li>
+        </ul>
+      </div>
+
       {/* Section: Meet the Team */}
       <section className={styles.teamSection}>
         <h2 data-aos="fade-right">Meet the Team</h2>
@@ -100,7 +134,6 @@ export default function About() {
 
       <div className={styles.sectionDivider}></div>
 
-
       {/* Section: Testimonials */}
       <section className={styles.testimonialSection}>
         <h2 data-aos="fade-left">What Students Say</h2>
@@ -118,13 +151,13 @@ export default function About() {
       <footer className={styles.footer}>
         <p>Connect With Humber</p>
         <div className={styles.socials}>
-          <a href="https://www.instagram.com/humberpoly/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/humberpoly/" target="_blank" rel="umber instagram" aria-label="Instagram">
             <FaInstagram size={28} />
           </a>
-          <a href="https://www.linkedin.com/school/humber-college/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/school/humber-college/" target="_blank" rel="Humber linkedin" aria-label="LinkedIn">
             <FaLinkedin size={28} />
           </a>
-          <a href="https://twitter.com/HumberPoly" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)">
+          <a href="https://twitter.com/HumberPoly" target="_blank" rel="Humber twitter" aria-label="X (formerly Twitter)">
             <FaXTwitter size={28} />
           </a>
         </div>
