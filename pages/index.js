@@ -34,6 +34,9 @@ export default function Home() {
             <div className={styles.faq}>
               <h2>Frequently Asked Questions</h2>
               <div className={styles.faqButtons}>
+                <button onClick={() => setFaqQuestion("Can you give me an overview of the Computer Programming program?")}>
+                  Can you give me an overview of the Computer Programming program?
+                </button>
                 <button onClick={() => setFaqQuestion("What are the admission requirements?")}>
                   What are the admission requirements?
                 </button>

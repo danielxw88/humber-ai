@@ -1,4 +1,5 @@
 import axios from "axios";
+import { humberFacts } from '../../data/humberData.js';
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -17,7 +18,21 @@ export default async function handler(req, res) {
           {
             role: "system",
             content:
-              "You are an assistant who only answers questions about the Humber College Computer Programming diploma.",
+              `You are an assistant who only answers questions about the Humber College Computer Programming diploma.
+              Use the following facts to help answer questions, but DO NOT copy them word-for-word.
+Instead, explain them clearly and naturally in your own words.
+:
+
+- TUITION: ${humberFacts.tuition}
+- ADMISSION: ${humberFacts.admission}
+- APPLICATION: ${humberFacts.application}
+- EQUIPMENT: ${humberFacts.equipment}
+- CONTACT: ${humberFacts.contact}
+- COURSES: ${humberFacts.courses}
+- PROGRAM: ${humberFacts.program}",
+
+Be concise, friendly, and professional.
+    `
           },
           {
             role: "user",
