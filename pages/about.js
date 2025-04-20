@@ -106,11 +106,11 @@ export default function About() {
       <div className={styles.botUsageSection}>
         <h3>How to Use the Chatbot</h3>
         <ul className={styles.botUsageList}>
-          <li><strong>Open the Chat:</strong> Go to the homepage of the website to find the AI Chatbot</li>
-          <li><strong>Type a Question:</strong> Ask something like <em>"What’s the deadline for Fall 2025 applications?"</em></li>
-          <li><strong>Use FAQ Questions:</strong> Clicking a question on our FAQ list below the Chatbot will autimatically ask popular questions</li>
-          <li><strong>Get Instant Help:</strong> The bot will respond with official answers based on Humber’s data.</li>
-          <li><strong>Refine If Needed:</strong> If the response doesn’t help, try rephrasing or being more specific.</li>
+          <li><strong>Open the Chat:</strong> Visit the homepage to access the Humber AI Chatbot.</li>
+          <li><strong>Type a Question:</strong> Enter your question in the box labeled "Ask something," then press <strong>Enter</strong> or click <strong>Send</strong>.</li>
+          <li><strong>Use FAQ Questions:</strong> Click any question in the FAQ list below the chatbot to automatically fill it into the input box.</li>
+          <li><strong>Get Instant Help:</strong> The chatbot replies with helpful answers based on Humber info and AI knowledge.</li>
+          <li><strong>Refine If Needed:</strong> If the response isn’t helpful, try rephrasing or asking your question more specifically.</li>
         </ul>
       </div>
 
