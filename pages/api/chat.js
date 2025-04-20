@@ -45,7 +45,7 @@ Be concise, friendly, and professional.
           "Content-Type": "application/json",
           Authorization: `Bearer ${apiKey}`,
         },
-        timeout: 10000, // Optional: set timeout to 10 seconds
+        timeout: 10000, // set timeout to 10 seconds
       }
     );
 

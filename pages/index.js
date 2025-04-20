@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
-import Chatbox from "../components/chatbox"; // lowercase here
+import Chatbox from "../components/chatbox"; 
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
