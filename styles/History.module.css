@@ -274,3 +274,10 @@
       justify-content: flex-end;
     }
   }
+
+  .historyPage {
+    background-color: #121212;
+    color: #e0e0ee;
+    min-height: 100vh;
+    padding-top: 2rem;
+  }

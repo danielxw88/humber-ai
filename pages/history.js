@@ -38,12 +38,9 @@ export default function History() {
   };
 
   return (
-    // This div will override the global background
-    <div style={{ 
-      backgroundColor: '#121212', 
-      minHeight: '100vh',
-      color: '#e0e0e0'
-    }}>
+    // Apply history page-specific dark theme layout styling
+    <div className={styles.historyPage}>
+
       <Head>
         <title>Chat History | Humber College AI Assistant</title>
       </Head>
